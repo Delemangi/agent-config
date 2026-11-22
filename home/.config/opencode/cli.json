@@ -1,0 +1,32 @@
+{
+  "$schema": "https://opencode.ai/v2/cli.json",
+  "animations": true,
+  "debug": {
+    "devtools": false
+  },
+  "diffs": {
+    "wrap": "word"
+  },
+  "prompt": {
+    "image_preview": true
+  },
+  "session": {
+    "grouping": "none",
+    "image_preview": true,
+    "markdown": "rendered",
+    "permissions": "autoaccept",
+    "scrollbar": true,
+    "sidebar": "auto",
+    "thinking": "hide",
+    "tps": true,
+    "verbosity": "high"
+  },
+  "tabs": {
+    "indicators": "numbers",
+    "mode": "on"
+  },
+  "theme": {
+    "mode": "system",
+    "name": "github"
+  }
+}

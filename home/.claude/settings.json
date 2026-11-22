@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "attribution": {
+    "commit": "",
+    "pr": "",
+    "sessionUrl": false
+  },
+  "cleanupPeriodDays": 90,
+  "effortLevel": "medium",
+  "enabledPlugins": {
+    "cc-plugin-you-should-know@builtin": true,
+    "code-review@claude-plugins-official": true,
+    "pyright-lsp@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true
+  },
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
+    "CLAUDE_CODE_SUBAGENT_MODEL": "sonnet"
+  },
+  "fastModePerSessionOptIn": true,
+  "model": "opus",
+  "outputStyle": "Concise",
+  "permissions": {
+    "defaultMode": "bypassPermissions",
+    "deny": [
+      "Read(./.env)",
+      "Read(./**/.env)"
+    ]
+  },
+  "pluginConfigs": {
+    "cc-plugin-agents-md@builtin": {
+      "options": {
+        "instructionFiles": "claude-md-and-agents-md"
+      }
+    }
+  },
+  "remoteControlAtStartup": false,
+  "showThinkingSummaries": true,
+  "skillOverrides": {
+    "ai-sdk": "name-only",
+    "brand": "user-invocable-only",
+    "cloudflare": "user-invocable-only",
+    "design-system": "user-invocable-only",
+    "docx": "user-invocable-only",
+    "fastapi": "user-invocable-only",
+    "reverse-engineer-anything": "user-invocable-only",
+    "shadcn": "user-invocable-only",
+    "sonar-list-issues": "name-only",
+    "supabase-postgres-best-practices": "user-invocable-only",
+    "ui-ux-pro-max": "name-only",
+    "wrangler": "name-only",
+    "xlsx": "user-invocable-only"
+  },
+  "skipAutoPermissionPrompt": true,
+  "skipDangerousModePermissionPrompt": true,
+  "skipWorkflowUsageWarning": true,
+  "syncClaudeAiSkills": false,
+  "teammateMode": "auto",
+  "tui": "fullscreen",
+  "worktree": {
+    "baseRef": "head"
+  }
+}

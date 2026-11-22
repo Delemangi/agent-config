@@ -1,0 +1,182 @@
+{
+  "$schema": "https://unpkg.com/oh-my-opencode-slim@latest/oh-my-opencode-slim.schema.json",
+  "autoUpdate": false,
+  "disabled_agents": [],
+  "disabled_mcps": [
+    "context7",
+    "gh_grep"
+  ],
+  "preset": "opencode-go",
+  "presets": {
+    "openai": {
+      "agents": {
+        "designer": {
+          "mcps": [
+            "codegraph",
+            "chrome_devtools"
+          ],
+          "model": "openai/gpt-6-luna",
+          "skills": [
+            "frontend-design",
+            "ui-ux-pro-max",
+            "web-design-guidelines",
+            "find-docs",
+            "shadcn",
+            "vercel-react-best-practices",
+            "verification-planning",
+            "vercel-composition-patterns",
+            "ai-elements",
+            "ai-sdk"
+          ],
+          "variant": "medium"
+        },
+        "explorer": {
+          "mcps": [
+            "codegraph",
+            "grep_app"
+          ],
+          "model": "openai/gpt-6-luna",
+          "skills": [
+            "find-docs",
+            "opencode"
+          ],
+          "variant": "low"
+        },
+        "fixer": {
+          "mcps": [
+            "codegraph"
+          ],
+          "model": "openai/gpt-6.2-sol",
+          "skills": [
+            "find-docs",
+            "verification-planning",
+            "simplify",
+            "vercel-react-best-practices",
+            "fastapi",
+            "supabase-postgres-best-practices",
+            "shadcn",
+            "opencode",
+            "ai-sdk",
+            "vercel-composition-patterns",
+            "step-back"
+          ],
+          "variant": "low"
+        },
+        "oracle": {
+          "mcps": [
+            "codegraph"
+          ],
+          "model": "openai/gpt-6.2-sol",
+          "skills": [
+            "simplify",
+            "find-docs",
+            "opencode",
+            "supabase-postgres-best-practices",
+            "verification-planning",
+            "step-back"
+          ],
+          "variant": "high"
+        },
+        "orchestrator": {
+          "mcps": [
+            "codegraph",
+            "grep_app",
+            "chrome_devtools"
+          ],
+          "model": "openai/gpt-6.2-sol",
+          "skills": [
+            "*"
+          ],
+          "variant": "medium"
+        }
+      }
+    },
+    "opencode-go": {
+      "agents": {
+        "designer": {
+          "mcps": [
+            "codegraph",
+            "chrome_devtools"
+          ],
+          "model": "opencode-go/qwen4-max",
+          "skills": [
+            "frontend-design",
+            "ui-ux-pro-max",
+            "web-design-guidelines",
+            "find-docs",
+            "shadcn",
+            "vercel-react-best-practices",
+            "verification-planning",
+            "vercel-composition-patterns",
+            "ai-elements",
+            "ai-sdk"
+          ]
+        },
+        "explorer": {
+          "mcps": [
+            "codegraph",
+            "grep_app"
+          ],
+          "model": "opencode-go/deepseek-v4.1-flash",
+          "skills": [
+            "find-docs",
+            "opencode"
+          ],
+          "variant": "max"
+        },
+        "fixer": {
+          "mcps": [
+            "codegraph"
+          ],
+          "model": "opencode-go/deepseek-v4.1-flash",
+          "skills": [
+            "find-docs",
+            "verification-planning",
+            "simplify",
+            "vercel-react-best-practices",
+            "fastapi",
+            "supabase-postgres-best-practices",
+            "shadcn",
+            "opencode",
+            "ai-sdk",
+            "vercel-composition-patterns",
+            "step-back"
+          ],
+          "variant": "max"
+        },
+        "observer": {
+          "mcps": [],
+          "model": "opencode-go/qwen3.8-flash",
+          "skills": []
+        },
+        "oracle": {
+          "mcps": [
+            "codegraph"
+          ],
+          "model": "opencode-go/qwen4-max",
+          "skills": [
+            "simplify",
+            "find-docs",
+            "opencode",
+            "supabase-postgres-best-practices",
+            "verification-planning",
+            "step-back"
+          ],
+          "variant": "xhigh"
+        },
+        "orchestrator": {
+          "mcps": [
+            "codegraph",
+            "grep_app",
+            "chrome_devtools"
+          ],
+          "model": "opencode-go/deepseek-v4.1-flash",
+          "skills": [
+            "*"
+          ],
+          "variant": "max"
+        }
+      }
+    }
+  }
+}

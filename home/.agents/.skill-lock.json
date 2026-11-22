@@ -1,0 +1,235 @@
+{
+  "version": 3,
+  "skills": {
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "76a98a285cb0434f3d39e1a873823556330e398b",
+      "installedAt": "2026-03-29T22:59:53.494Z",
+      "updatedAt": "2026-07-25T19:40:22.304Z"
+    },
+    "web-design-guidelines": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/web-design-guidelines/SKILL.md",
+      "skillFolderHash": "3116f3e62dbd02b44a598b1aa690d2a8938e8f89",
+      "installedAt": "2026-03-29T23:02:37.797Z",
+      "updatedAt": "2026-04-01T21:51:57.996Z"
+    },
+    "vercel-react-best-practices": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/react-best-practices/SKILL.md",
+      "skillFolderHash": "343db72180d05814949fef7d46be96b5c6ee86b3",
+      "installedAt": "2026-03-29T23:06:14.934Z",
+      "updatedAt": "2026-04-26T16:41:10.683Z"
+    },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "skillFolderHash": "d79e2a5bb4df4a386c2adcdd9ab8709bba28c3f6",
+      "pluginName": "example-skills",
+      "installMode": "copy",
+      "installedAt": "2026-03-29T23:07:45.332Z",
+      "updatedAt": "2026-11-19T01:00:08.594Z"
+    },
+    "ui-ux-pro-max": {
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
+      "skillPath": ".claude/skills/ui-ux-pro-max/SKILL.md",
+      "skillFolderHash": "d69b734e576aa6b430bc11a435aa11d29bc92c8e",
+      "installedAt": "2026-03-29T23:10:04.361Z",
+      "updatedAt": "2026-11-08T12:46:43.073Z"
+    },
+    "shadcn": {
+      "source": "shadcn/ui",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/shadcn/ui.git",
+      "skillPath": "skills/shadcn/SKILL.md",
+      "skillFolderHash": "900e3dff4bc1b341db90a147bee6dbed4c2add3c",
+      "installedAt": "2026-03-29T23:13:51.920Z",
+      "updatedAt": "2026-10-14T22:48:18.491Z"
+    },
+    "vercel-composition-patterns": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/composition-patterns/SKILL.md",
+      "skillFolderHash": "bf90d0a4b83ea054653350f9c67f6de235d3a368",
+      "installedAt": "2026-04-01T21:53:32.811Z",
+      "updatedAt": "2026-04-01T21:53:32.811Z"
+    },
+    "conventional-commit": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/github/awesome-copilot.git",
+      "skillPath": "skills/conventional-commit/SKILL.md",
+      "skillFolderHash": "2dd6528ab4c12198e4805ea62739f7c51d0dd51d",
+      "installedAt": "2026-04-08T08:08:08.404Z",
+      "updatedAt": "2026-04-08T08:08:08.404Z"
+    },
+    "fastapi": {
+      "source": "fastapi/fastapi",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/fastapi/fastapi.git",
+      "skillPath": "fastapi/.agents/skills/fastapi/SKILL.md",
+      "skillFolderHash": "a36084f24d10859b302a9c370e71e1771ce3a1b6",
+      "installedAt": "2026-05-13T20:43:57.248Z",
+      "updatedAt": "2026-11-08T12:46:44.565Z"
+    },
+    "cloudflare": {
+      "source": "cloudflare/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/cloudflare/skills.git",
+      "skillPath": "skills/cloudflare/SKILL.md",
+      "skillFolderHash": "600913aa4edcffe1cc389b8757b586979a13bc47",
+      "installedAt": "2026-05-13T20:44:06.932Z",
+      "updatedAt": "2026-11-07T14:11:28.320Z"
+    },
+    "wrangler": {
+      "source": "cloudflare/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/cloudflare/skills.git",
+      "skillPath": "skills/wrangler/SKILL.md",
+      "skillFolderHash": "a008bb54eab6653272b18ee0f74ba656bb19ac8d",
+      "installedAt": "2026-05-13T20:44:51.926Z",
+      "updatedAt": "2026-10-30T19:08:28.128Z"
+    },
+    "docx": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "skillPath": "skills/docx/SKILL.md",
+      "skillFolderHash": "306eb29b24d14e7636470305a88826c01a4f872c",
+      "installedAt": "2026-06-25T20:22:28.506Z",
+      "updatedAt": "2026-11-07T14:11:24.309Z"
+    },
+    "xlsx": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "skillPath": "skills/xlsx/SKILL.md",
+      "skillFolderHash": "6d3b017b2ec669669409de726a04ab37637d11fe",
+      "installedAt": "2026-06-25T20:22:36.485Z",
+      "updatedAt": "2026-11-07T14:11:26.172Z"
+    },
+    "ai-sdk": {
+      "source": "vercel/ai",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel/ai.git",
+      "skillPath": "skills/use-ai-sdk/SKILL.md",
+      "skillFolderHash": "f0a63823ca82c30c6af320e94cbed1d769503196",
+      "installedAt": "2026-06-26T21:25:52.338Z",
+      "updatedAt": "2026-09-23T16:14:58.663Z"
+    },
+    "ai-elements": {
+      "source": "vercel/ai-elements",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel/ai-elements.git",
+      "skillPath": "skills/ai-elements/SKILL.md",
+      "skillFolderHash": "2f8770af55a59b5d90ac2321835cef1037c6b412",
+      "installedAt": "2026-06-26T21:26:00.532Z",
+      "updatedAt": "2026-07-09T22:32:51.098Z"
+    },
+    "brand": {
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
+      "skillPath": ".claude/skills/brand/SKILL.md",
+      "skillFolderHash": "587f291030a68a213b4aa1936dc4be8cb25adbc8",
+      "installedAt": "2026-07-09T22:32:34.376Z",
+      "updatedAt": "2026-10-11T08:11:12.364Z"
+    },
+    "design-system": {
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
+      "skillPath": ".claude/skills/design-system/SKILL.md",
+      "skillFolderHash": "7e87cf933457bb27fdfc818e2de69dede4eddd2c",
+      "installedAt": "2026-07-09T22:32:34.379Z",
+      "updatedAt": "2026-11-08T12:46:43.375Z"
+    },
+    "create-github-action-workflow-specification": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/github/awesome-copilot.git",
+      "skillPath": "skills/create-github-action-workflow-specification/SKILL.md",
+      "skillFolderHash": "ee740bda6b10915c695084fced55fb4067bebd6b",
+      "installedAt": "2026-08-23T14:59:09.365Z",
+      "updatedAt": "2026-08-23T14:59:09.365Z"
+    },
+    "discord-bot": {
+      "source": "claude-office-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/claude-office-skills/skills.git",
+      "skillPath": "discord-bot/SKILL.md",
+      "skillFolderHash": "973696205da138faf19f3354ed928e281dec40dd",
+      "installedAt": "2026-08-23T14:59:13.323Z",
+      "updatedAt": "2026-08-23T14:59:13.323Z"
+    },
+    "sonar-list-issues": {
+      "source": "SonarSource/sonarqube-agent-plugins",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/SonarSource/sonarqube-agent-plugins.git",
+      "skillPath": "skills/sonar-list-issues/SKILL.md",
+      "skillFolderHash": "edbe452557311ece929634a927a2fdd31fb7c557",
+      "installedAt": "2026-09-05T20:21:26.275Z",
+      "updatedAt": "2026-11-05T16:51:08.565Z"
+    },
+    "supabase-postgres-best-practices": {
+      "source": "supabase/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/supabase/agent-skills.git",
+      "skillPath": "skills/supabase-postgres-best-practices/SKILL.md",
+      "skillFolderHash": "27bde25111c4cd5e6f803fc9db5fbffe27bb26cf",
+      "pluginName": "postgres-best-practices",
+      "installedAt": "2026-09-05T20:30:20.924Z",
+      "updatedAt": "2026-09-05T20:30:20.924Z"
+    },
+    "reverse-engineer-anything": {
+      "source": "morluto/rea",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/morluto/rea.git",
+      "skillPath": ".agents/skills/reverse-engineer-anything/SKILL.md",
+      "skillFolderHash": "53a3256fab9835d3d8ff0348749de1787da73830",
+      "installedAt": "2026-10-10T20:06:59.420Z",
+      "updatedAt": "2026-11-08T12:46:46.340Z"
+    },
+    "docker-build-strategies": {
+      "source": "docker/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/docker/skills.git",
+      "commit": "caeee2024f7527d890a29dd1732b62a112f56d0e",
+      "skillPath": "skills/docker-build-strategies/SKILL.md",
+      "skillFolderHash": "a239f1f476a9fc06affba5aa37a28a2f2717e563",
+      "installedAt": "2026-11-21T20:33:49.476Z",
+      "updatedAt": "2026-11-21T20:34:23.048Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "cline",
+    "codex",
+    "cursor",
+    "droid",
+    "gemini-cli",
+    "github-copilot",
+    "kilo",
+    "kimi-code-cli",
+    "opencode",
+    "warp",
+    "zed",
+    "claude-code"
+  ]
+}

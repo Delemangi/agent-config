@@ -1,0 +1,39 @@
+# Local overrides are not tracked
+
+# Secrets and credentials
+secrets/
+**/secrets/
+*.token
+service.json
+discord-config.json
+auth.json
+.credentials.json
+oauth_creds.json
+trustedFolders.json
+
+# Runtime and generated state
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.log
+*.pid
+history.jsonl
+usage-*.csv
+**/projects/
+**/transcripts/
+**/sessions/
+**/file-history/
+**/cache/
+**/node_modules/
+**/backups/
+home/.agents/skills/
+home/.codex/plugins/
+home/.claude/plugins/
+home/.local/
+
+# Editor and OS metadata
+.DS_Store
+.vscode/
+.idea/
+*.swp

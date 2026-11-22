@@ -1,0 +1,97 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agents": {
+    "title": {
+      "model": "opencode-go/gpt-6-luna#low"
+    }
+  },
+  "experimental": {
+    "todo": true
+  },
+  "formatter": true,
+  "instructions": [
+    "CLAUDE.md",
+    ".claude/CLAUDE.md"
+  ],
+  "mcp": {
+    "servers": {
+      "plane": {
+        "type": "local",
+        "command": ["uvx", "--python", "3.12", "plane-mcp-server", "stdio"],
+        "environment": {
+          // Set these for your Plane instance, or remove this MCP.
+          "PLANE_BASE_URL": "",
+          "PLANE_WORKSPACE_SLUG": "",
+          "PLANE_API_KEY": "{file:~/.config/opencode/secrets/plane-token}"
+        },
+        "disabled": true
+      },
+      "chrome_devtools": {
+        "command": [
+          "npx",
+          "-y",
+          "chrome-devtools-mcp@latest",
+          "--auto-connect",
+          "--no-usage-statistics",
+          "--no-performance-crux"
+        ],
+        "disabled": false,
+        "environment": {
+          "CHROME_DEVTOOLS_MCP_NO_UPDATE_CHECKS": "1"
+        },
+        "type": "local"
+      },
+      "browse": {
+        "command": ["browse", "mcp"],
+        "disabled": false,
+        "type": "local"
+      },
+      "codegraph": {
+        "command": ["codegraph", "serve", "--mcp"],
+        "disabled": false,
+        "environment": {
+          "CODEGRAPH_TELEMETRY": "0"
+        },
+        "type": "local"
+      },
+      "grep_app": {
+        "disabled": false,
+        "type": "remote",
+        "url": "https://mcp.grep.app"
+      }
+    }
+  },
+  "permissions": [
+    {
+      "action": "*",
+      "effect": "allow",
+      "resource": "*"
+    },
+    {
+      "action": "read",
+      "effect": "deny",
+      "resource": ".env"
+    },
+    {
+      "action": "read",
+      "effect": "deny",
+      "resource": "**/.env"
+    }
+  ],
+  "plugins": [
+    "oh-my-opencode-slim@latest"
+  ],
+  "references": {
+    "agentic-ai-kb": {
+      "description": "Curated agentic AI architecture, context engineering, memory, evaluation, security, and production guidance. Consult relevant documents under docs/ for design options and checklists. Treat as secondary reference material; verify technical claims and version-specific APIs against primary sources.",
+      "repository": "ankurkumarz/agentic-ai-knowledge-base"
+    },
+    "owasp-asvs": {
+      "description": "OWASP Application Security Verification Standard. Consult relevant requirements when designing or reviewing web application security, including authentication, authorization, session management, and sensitive-data handling. Cite requirement IDs with their ASVS version; distinguish released requirements from unreleased changes and apply only those relevant to the project's scope.",
+      "repository": "OWASP/ASVS"
+    }
+  },
+  "websearch": {
+    "provider": "exa"
+  }
+}
