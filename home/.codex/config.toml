@@ -1,5 +1,4 @@
 approval_policy = "never"
-commit_attribution = ""
 
 # Keep repository instructions shared with Claude and other tools.
 project_doc_fallback_filenames = ["CLAUDE.md"]
@@ -9,10 +8,12 @@ model_reasoning_effort = "high"
 model_reasoning_summary = "auto"
 
 review_model = "gpt-6.2-astra"
-default_subagent_model = "gpt-6.2-sol"
 default_permissions = ":danger-full-access"
 
-hooks = true
+[agents]
+default_subagent_model = "gpt-6.2-sol"
+
+[features]
 memories = true
 multi_agent_v2 = true
 

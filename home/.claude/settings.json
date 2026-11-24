@@ -6,6 +6,7 @@
     "sessionUrl": false
   },
   "cleanupPeriodDays": 90,
+  "defaultShell": "powershell",
   "effortLevel": "medium",
   "enabledPlugins": {
     "cc-plugin-you-should-know@builtin": true,
@@ -15,6 +16,7 @@
   },
   "env": {
     "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
+    "CLAUDE_CODE_PLUGIN_DIRS": "~/.claude/mods/agent-row-status",
     "CLAUDE_CODE_SUBAGENT_MODEL": "sonnet"
   },
   "fastModePerSessionOptIn": true,
@@ -54,6 +56,11 @@
   "skipAutoPermissionPrompt": true,
   "skipDangerousModePermissionPrompt": true,
   "skipWorkflowUsageWarning": true,
+  "statusLine": {
+    "command": "node \"$HOME/.claude/statusline.mjs\"",
+    "refreshInterval": 60,
+    "type": "command"
+  },
   "syncClaudeAiSkills": false,
   "teammateMode": "auto",
   "tui": "fullscreen",

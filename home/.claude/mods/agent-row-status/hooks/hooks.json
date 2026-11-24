@@ -1,0 +1,4 @@
+{
+  "description": "Draws each subagent row at the AgentRow render site",
+  "modules": ["./register.mjs"]
+}

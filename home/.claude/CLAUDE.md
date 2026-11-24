@@ -20,3 +20,13 @@
 - A squash- or rebase-merged branch is not ancestry-merged, so `git branch -d` refuses it. Once its PR/MR is confirmed merged (for example `gh pr view <branch> --json state,mergedAt`), delete it with `git branch -D`; the confirmed merge, not `-d`, is what makes that safe.
 - Never switch to the default branch inside a linked worktree when the primary checkout already has it; remove the clean worktree with `git worktree remove` (or `git worktree prune` if its directory is already gone), then delete the branch from the primary checkout.
 - Pre-authorized only when provably safe: no `--force`, no dirty worktree, no branch checked out elsewhere, and no unmerged work (a squash/rebase `-D` requires the confirmed merge above). If merge status or local changes are unclear, stop and report instead.
+
+## Windows
+
+- Prefer PowerShell 7 for Windows automation; use syntax appropriate to the actual shell.
+- Never use Start-Process with redirected output, CMD start, or pythonw to detach persistent processes from tool calls. Use a verified background mechanism with tracked ownership and cleanup.
+
+## Remote and SSH Sessions
+
+- Before issuing commands over SSH, a remote shell, container, or another terminal resource, check what the terminal actually is: remote OS, shell, and whether the session is interactive.
+- Do not assume the local platform, paths, quoting, or launcher conventions apply; verify the host, user, and working directory before file or process operations, and prefer non-interactive commands where possible.

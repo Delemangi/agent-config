@@ -20,6 +20,17 @@
 - Never switch to the default branch inside a linked worktree when the primary checkout already has it; remove the clean worktree with `git worktree remove` (or `git worktree prune` if its directory is already gone), then delete the branch from the primary checkout.
 - Pre-authorized only when provably safe: no `--force`, no dirty worktree, no branch checked out elsewhere, and no unmerged work (a squash/rebase `-D` requires the confirmed merge above). If merge status or local changes are unclear, stop and report instead.
 
+## Windows Launching
+
+- Prefer PowerShell 7 for Windows automation; use syntax appropriate to the actual shell.
+- Never use PowerShell Start-Process (including redirected output), CMD start/start /b, or pythonw to detach persistent processes from synchronous tool calls; these can leave calls stuck.
+- Reuse a verified service or use native self-detachment/a previously verified launcher that closes inherited stdin/stdout/stderr, tracks the owned PID and cleanup, and returns within five seconds. Verify readiness separately. If a launch hangs, stop only its task-owned process tree, verify the port is closed, and preserve work; do not repeat the failed launcher or launch again while its PID/listener exists.
+
+## Remote and SSH Sessions
+
+- Before issuing commands over SSH, a remote shell, container, or another terminal resource, check what the terminal actually is: remote OS, shell, and whether the session is interactive.
+- Do not assume the local platform, paths, quoting, or launcher conventions apply; verify the host, user, and working directory before file or process operations, and prefer non-interactive commands where possible.
+
 ## Documentation Routing
 
 - Use `openai-docs` for current Codex and OpenAI product/API questions; use `find-docs` through installed `ctx7` for third-party documentation. Follow those skills' current workflows rather than duplicating them here.

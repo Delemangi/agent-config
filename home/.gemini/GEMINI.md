@@ -13,6 +13,17 @@
 - Stop servers, watchers, tunnels, and other background processes you started when the task ends; report anything you intentionally left running and why.
 - Do not read files named exactly `.env`. Other filenames are not categorically blocked, but never expose credentials, tokens, private keys, connection strings, or authentication material in output, logs, patches, commits, or tool arguments.
 
+## Windows Launching
+
+- Prefer PowerShell 7 for Windows automation; use syntax appropriate to the actual shell.
+- Never use PowerShell Start-Process (including redirected output), CMD start/start /b, or pythonw to detach persistent processes from synchronous tool calls; these can leave calls stuck.
+- Reuse a verified service or use native self-detachment/a previously verified launcher that closes inherited stdin/stdout/stderr, tracks the owned PID and cleanup, and returns within five seconds. Verify readiness separately. If a launch hangs, stop only its task-owned process tree, verify the port is closed, and preserve work; do not repeat the failed launcher or launch again while its PID/listener exists.
+
+## Remote and SSH Sessions
+
+- Before issuing commands over SSH, a remote shell, container, or another terminal resource, check what the terminal actually is: remote OS, shell, and whether the session is interactive.
+- Do not assume the local platform, paths, quoting, or launcher conventions apply; verify the host, user, and working directory before file or process operations, and prefer non-interactive commands where possible.
+
 ## Post-Merge Cleanup
 
 - After a branch's work is merged, finish the task: in the primary checkout switch to the default branch (`main` unless the repository names another), update it with `git pull --ff-only`, and delete the merged branch with `git branch -d`.
