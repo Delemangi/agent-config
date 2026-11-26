@@ -1,7 +1,8 @@
 # Personal Preferences
 
 - Keep responses concise; avoid narrating routine work.
-- Do not commit, amend, push, or publish PR comments/reviews unless explicitly requested. Preserve configured human Git identities; do not add AI/tool/vendor attribution, AI co-author trailers, or promotional footers unless the user requests that exact text.
+- Do not commit, amend, push, or publish PR comments/reviews unless explicitly requested.
+- Preserve configured human Git identities. Never add or retain AI/tool/vendor attribution, co-author trailers, "generated with" lines, model or harness names, session URLs/IDs, request IDs, or promotional text in commits, tags, PRs, issues, comments, code, docs, or artifacts unless the user explicitly requests that exact text. Before committing, inspect the staged diff and message and strip such clues. Tool names are allowed only when they are the subject of the change or required by configuration or documentation.
 - Never force-push a branch unless absolutely necessary or the user explicitly requests it.
 - Before opening a new PR, issue, or similar contribution, search for existing examples and follow the repository's conventions for titles, templates, labels, and description structure.
 - Before posting, submitting, editing, or deleting any PR comment or review, show the exact proposed content (or identify what would be deleted) and obtain explicit approval. A request to inspect or review a PR does not authorize publishing findings.
