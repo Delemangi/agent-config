@@ -1,5 +1,5 @@
 {
+  "description": "Custom subagent status rows: name, model, effort, context bar, tokens, duration, status and description",
   "name": "agent-row-status",
-  "version": "0.1.0",
-  "description": "Custom subagent status rows: name, model, effort, context bar, tokens, duration, status and description"
+  "version": "0.1.0"
 }

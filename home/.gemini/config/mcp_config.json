@@ -1,16 +1,16 @@
 {
   "mcpServers": {
     "codegraph": {
-      "command": "codegraph",
       "args": ["serve", "--mcp"],
+      "command": "codegraph",
+      "disabled": false,
       "env": {
         "CODEGRAPH_TELEMETRY": "0"
-      },
-      "disabled": false
+      }
     },
     "grep_app": {
-      "serverUrl": "https://mcp.grep.app",
-      "disabled": false
+      "disabled": false,
+      "serverUrl": "https://mcp.grep.app"
     }
   }
 }

@@ -1,14 +1,15 @@
 approval_policy = "never"
 
-# Keep repository instructions shared with Claude and other tools.
-project_doc_fallback_filenames = ["CLAUDE.md"]
+default_permissions = ":danger-full-access"
 
 model = "gpt-6.2-sol"
 model_reasoning_effort = "high"
 model_reasoning_summary = "auto"
 
+# Keep repository instructions shared with Claude and other tools.
+project_doc_fallback_filenames = ["CLAUDE.md"]
+
 review_model = "gpt-6.2-astra"
-default_permissions = ":danger-full-access"
 
 [agents]
 default_subagent_model = "gpt-6.2-sol"
