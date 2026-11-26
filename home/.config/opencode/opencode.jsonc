@@ -15,16 +15,10 @@
   ],
   "mcp": {
     "servers": {
-      "plane": {
-        "type": "local",
-        "command": ["uvx", "--python", "3.12", "plane-mcp-server", "stdio"],
-        "environment": {
-          // Set these for your Plane instance, or remove this MCP.
-          "PLANE_BASE_URL": "",
-          "PLANE_WORKSPACE_SLUG": "",
-          "PLANE_API_KEY": "{file:~/.config/opencode/secrets/plane-token}"
-        },
-        "disabled": true
+      "browse": {
+        "command": ["browse", "mcp"],
+        "disabled": false,
+        "type": "local"
       },
       "chrome_devtools": {
         "command": [
@@ -41,11 +35,6 @@
         },
         "type": "local"
       },
-      "browse": {
-        "command": ["browse", "mcp"],
-        "disabled": false,
-        "type": "local"
-      },
       "codegraph": {
         "command": ["codegraph", "serve", "--mcp"],
         "disabled": false,
@@ -58,6 +47,22 @@
         "disabled": false,
         "type": "remote",
         "url": "https://mcp.grep.app"
+      },
+      "notion": {
+        "disabled": false,
+        "type": "remote",
+        "url": "https://mcp.notion.com/mcp"
+      },
+      "plane": {
+        "command": ["uvx", "--python", "3.12", "plane-mcp-server", "stdio"],
+        "disabled": true,
+        "environment": {
+          // Set these for your Plane instance, or remove this MCP.
+          "PLANE_API_KEY": "{file:~/.config/opencode/secrets/plane-token}",
+          "PLANE_BASE_URL": "",
+          "PLANE_WORKSPACE_SLUG": ""
+        },
+        "type": "local"
       }
     }
   },
